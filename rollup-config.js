@@ -5,8 +5,8 @@ import uglify      from 'rollup-plugin-uglify'
 
 export default {
     entry: 'app/main.js',
-    dest: 'dist/build.js', // output a single application bundle
-    sourceMap: false,
+    dest: 'dist/build.js',
+    sourceMap: true,
     format: 'iife',
     plugins: [
         nodeResolve({jsnext: true, module: true}),
